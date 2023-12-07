@@ -2,7 +2,7 @@ package zadania;
 
 import java.util.Objects;
 
-public class Animal {
+public class Animal extends Object{
     private Long id;
     private String type;
 

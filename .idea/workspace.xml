@@ -5,49 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1199c3d0-8915-43cc-b140-7e364c494291" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assertThrows/AssertThrowsExampleClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assertThrows/UserDefinedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mockito/AddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mockito/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mockito/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tdd/Fibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tdd/Meal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tdd/MealRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unitTests/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/Animal.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/zadania/AnimalRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/zadania/AnimalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/EmailValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/InMemoryAnimalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assertThrows/AssertThrowsExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assertj/AssertJTestExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mockito/MockitoExamplesTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mockito/MockitoSessionExampleTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mockito/MockitoSessionParameterResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/parameterizedTests/CustomerArgumentsProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/parameterizedTests/ParameterizedTestsExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tdd/FibonacciTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tdd/MealRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unitTests/AfterAllTestExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unitTests/AfterEachTestExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unitTests/BeforeAllTestExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unitTests/BeforeEachTestExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unitTests/OurFirstUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/InMemmoryAnimalRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/zadania/AnimalServiceWithMockTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/zadania/AnimalServiceWithoutMockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zadania/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zadania/EmailValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadania.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zadania/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zadania/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zadania/EmailValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zadania/EmailValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zadania/InMemoryAnimalRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/zadania/EmailValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zadania/EmailValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -79,23 +48,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Volumes/Szkolenia/Generali/testowanie/src/main/java/zadania&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AnimalServiceWithMockTest.givenAnimalAnimal_whenGetAnimalByIdAndType_ThenVerifyTrue.executor": "Run",
+    "JUnit.AnimalServiceWithMockTest.givenAnimalAnimal_whenSave_ThenVerifyTrue.executor": "Run",
+    "JUnit.AnimalServiceWithMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue.executor": "Run",
+    "JUnit.AnimalServiceWithMockTest.x.executor": "Run",
+    "JUnit.AnimalServiceWithoutMockTest.givenAnimalAnimal_whenGetAnimalByIdAndType_ThenVerifyTrue.executor": "Run",
+    "JUnit.AnimalServiceWithoutMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue.executor": "Run",
+    "JUnit.AnimalServiceWithoutMockTest.givenAnimal_whenSave_ThenVerifyTrue.executor": "Run",
+    "JUnit.EmailValidatorTest.x (1).executor": "Run",
+    "JUnit.EmailValidatorTest.x (2).executor": "Run",
+    "JUnit.EmailValidatorTest.x.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Volumes/Szkolenia/Generali/generali-java-testing/src/main/java/zadania",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="zadania" />
@@ -117,8 +99,8 @@
       <recent name="unitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AnimalServiceWithoutMockTest.testGetAnimalByIdAndType">
-    <configuration name="AnimalServiceWithMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AnimalServiceWithoutMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue">
+    <configuration name="AnimalServiceWithMockTest.givenAnimalAnimal_whenSave_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -128,12 +110,29 @@
       </extension>
       <option name="PACKAGE_NAME" value="zadania" />
       <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithMockTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="givenAnimalAnimal_whenSave_ThenVerifyTrue" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnimalServiceWithoutMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnimalServiceWithMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zadania.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zadania" />
+      <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithMockTest" />
+      <option name="METHOD_NAME" value="givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimalServiceWithoutMockTest.givenAnimalAnimal_whenGetAnimalByIdAndType_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -143,12 +142,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="zadania" />
       <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithoutMockTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="givenAnimalAnimal_whenGetAnimalByIdAndType_ThenVerifyTrue" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnimalServiceWithoutMockTest.testGetAnimalByIdAndType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnimalServiceWithoutMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -158,13 +158,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="zadania" />
       <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithoutMockTest" />
-      <option name="METHOD_NAME" value="testGetAnimalByIdAndType" />
+      <option name="METHOD_NAME" value="givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.givenTwoNumbers_WhenDivineByZero_ThenThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnimalServiceWithoutMockTest.givenAnimal_whenSave_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -173,14 +173,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="zadania" />
-      <option name="MAIN_CLASS_NAME" value="zadania.CalculatorTest" />
-      <option name="METHOD_NAME" value="givenTwoNumbers_WhenDivineByZero_ThenThrowException" />
+      <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithoutMockTest" />
+      <option name="METHOD_NAME" value="givenAnimal_whenSave_ThenVerifyTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmailValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmailValidatorTest.x (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -190,22 +190,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="zadania" />
       <option name="MAIN_CLASS_NAME" value="zadania.EmailValidatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParameterizedTestsExamples.testWithCsvSource (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parameterizedTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="parameterizedTests" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedTests.ParameterizedTestsExamples" />
-      <option name="METHOD_NAME" value="testWithCsvSource(java.lang.String,int)" />
+      <option name="METHOD_NAME" value="x(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -213,13 +198,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AnimalServiceWithoutMockTest.testGetAnimalByIdAndType" />
-        <item itemvalue="JUnit.AnimalServiceWithMockTest" />
-        <item itemvalue="JUnit.AnimalServiceWithoutMockTest" />
-        <item itemvalue="JUnit.EmailValidatorTest" />
-        <item itemvalue="JUnit.CalculatorTest.givenTwoNumbers_WhenDivineByZero_ThenThrowException" />
+        <item itemvalue="JUnit.AnimalServiceWithoutMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" />
+        <item itemvalue="JUnit.AnimalServiceWithoutMockTest.givenAnimal_whenSave_ThenVerifyTrue" />
+        <item itemvalue="JUnit.AnimalServiceWithoutMockTest.givenAnimalAnimal_whenGetAnimalByIdAndType_ThenVerifyTrue" />
+        <item itemvalue="JUnit.AnimalServiceWithMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" />
+        <item itemvalue="JUnit.AnimalServiceWithMockTest.givenAnimalAnimal_whenSave_ThenVerifyTrue" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-5f3ff201" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -231,6 +223,8 @@
       <updated>1701348711904</updated>
       <workItem from="1701348715719" duration="40339000" />
       <workItem from="1701938327499" duration="72000" />
+      <workItem from="1701943897037" duration="3024000" />
+      <workItem from="1701951370836" duration="7452000" />
     </task>
     <servers />
   </component>
