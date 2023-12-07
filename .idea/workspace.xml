@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1199c3d0-8915-43cc-b140-7e364c494291" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/AnimalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/AnimalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/InMemmoryAnimalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zadania/AnimalServiceWithMockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zadania/AnimalServiceWithoutMockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1199c3d0-8915-43cc-b140-7e364c494291" name="Changes" comment="Rozwiązania zadań">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tdd/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/InMemoryCarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tdd/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/zadania/CarServiceWithMockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/zadania/CarServiceWithoutMockTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zadania/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zadania/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zadania/EmailValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zadania/EmailValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zadania/InMemoryAnimalRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/zadania/EmailValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zadania/EmailValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +55,16 @@
     "JUnit.AnimalServiceWithoutMockTest.givenAnimalAnimal_whenGetAnimalByIdAndType_ThenVerifyTrue.executor": "Run",
     "JUnit.AnimalServiceWithoutMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue.executor": "Run",
     "JUnit.AnimalServiceWithoutMockTest.givenAnimal_whenSave_ThenVerifyTrue.executor": "Run",
+    "JUnit.CarServiceWithMockTest.executor": "Run",
+    "JUnit.CarServiceWithoutMockTest.executor": "Run",
     "JUnit.EmailValidatorTest.x (1).executor": "Run",
     "JUnit.EmailValidatorTest.x (2).executor": "Run",
     "JUnit.EmailValidatorTest.x.executor": "Run",
+    "JUnit.MyListTest.addElementToList.executor": "Run",
+    "JUnit.MyListTest.addElementsToList.executor": "Run",
+    "JUnit.MyListTest.canICreateAnMyListObject.executor": "Run",
+    "JUnit.MyListTest.isListEmpty.executor": "Run",
+    "JUnit.MyListTest.isListNotEmpty.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -80,11 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="tdd" />
       <recent name="zadania" />
       <recent name="mockito" />
       <recent name="parameterizedTests" />
       <recent name="assertThrows" />
-      <recent name="tdd" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -96,90 +101,11 @@
       <recent name="tdd" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="zadania" />
       <recent name="unitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AnimalServiceWithoutMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue">
-    <configuration name="AnimalServiceWithMockTest.givenAnimalAnimal_whenSave_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zadania.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="zadania" />
-      <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithMockTest" />
-      <option name="METHOD_NAME" value="givenAnimalAnimal_whenSave_ThenVerifyTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimalServiceWithMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zadania.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="zadania" />
-      <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithMockTest" />
-      <option name="METHOD_NAME" value="givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimalServiceWithoutMockTest.givenAnimalAnimal_whenGetAnimalByIdAndType_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zadania.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="zadania" />
-      <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithoutMockTest" />
-      <option name="METHOD_NAME" value="givenAnimalAnimal_whenGetAnimalByIdAndType_ThenVerifyTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimalServiceWithoutMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zadania.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="zadania" />
-      <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithoutMockTest" />
-      <option name="METHOD_NAME" value="givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimalServiceWithoutMockTest.givenAnimal_whenSave_ThenVerifyTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zadania.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="zadania" />
-      <option name="MAIN_CLASS_NAME" value="zadania.AnimalServiceWithoutMockTest" />
-      <option name="METHOD_NAME" value="givenAnimal_whenSave_ThenVerifyTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyListTest.doesListContainObject">
     <configuration name="EmailValidatorTest.x (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
@@ -196,13 +122,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyListTest.addElementToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
+      <option name="METHOD_NAME" value="addElementToList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListTest.addElementsToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
+      <option name="METHOD_NAME" value="addElementsToList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListTest.doesListContainObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
+      <option name="METHOD_NAME" value="doesListContainObject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListTest.isListEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
+      <option name="METHOD_NAME" value="isListEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListTest.isListNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
+      <option name="METHOD_NAME" value="isListNotEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AnimalServiceWithoutMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" />
-        <item itemvalue="JUnit.AnimalServiceWithoutMockTest.givenAnimal_whenSave_ThenVerifyTrue" />
-        <item itemvalue="JUnit.AnimalServiceWithoutMockTest.givenAnimalAnimal_whenGetAnimalByIdAndType_ThenVerifyTrue" />
-        <item itemvalue="JUnit.AnimalServiceWithMockTest.givenAnimalList_whenGetAllAnimals_ThenVerifyTrue" />
-        <item itemvalue="JUnit.AnimalServiceWithMockTest.givenAnimalAnimal_whenSave_ThenVerifyTrue" />
+        <item itemvalue="JUnit.MyListTest.doesListContainObject" />
+        <item itemvalue="JUnit.MyListTest.isListNotEmpty" />
+        <item itemvalue="JUnit.MyListTest.isListEmpty" />
+        <item itemvalue="JUnit.MyListTest.addElementsToList" />
+        <item itemvalue="JUnit.MyListTest.addElementToList" />
       </list>
     </recent_temporary>
   </component>
@@ -224,8 +230,17 @@
       <workItem from="1701348715719" duration="40339000" />
       <workItem from="1701938327499" duration="72000" />
       <workItem from="1701943897037" duration="3024000" />
-      <workItem from="1701951370836" duration="7452000" />
+      <workItem from="1701951370836" duration="12642000" />
     </task>
+    <task id="LOCAL-00001" summary="Rozwiązania zadań">
+      <option name="closed" value="true" />
+      <created>1701959667039</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701959667039</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +256,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Rozwiązania zadań" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rozwiązania zadań" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
