@@ -197,17 +197,32 @@ public class MyListTest {
         assertTrue(list.contains("four"));
      }
 
+     @Test
+     void testGet(){
+         MyList<String> list = new MyList<>();
+         list.add("one"); // index 0
+         list.add("two"); // index 1
+
+         assertEquals("two", list.get(1));
+         assertThrows(ArrayIndexOutOfBoundsException.class,() -> list.get(-1));
+         assertThrows(ArrayIndexOutOfBoundsException.class,() -> list.get(2));
+     }
+
     @Test
     void testAddAllAtIndex() {
         MyList<String> list = new MyList<>();
-        list.add("one");
-        list.add("two");
+        list.add("one"); // index 0
+        list.add("two"); // index 1 -> 3
 
         List<String> collectionToAdd = new ArrayList<>();
         collectionToAdd.add("three");
         collectionToAdd.add("four");
 
         assertTrue(list.addAll(1, collectionToAdd));
-        assertEquals("one", );
+
+        assertEquals("one", list.get(0));
+        assertEquals("three", list.get(1));
+        assertEquals("four", list.get(2));
+        assertEquals("two", list.get(3));
     }
 }

@@ -64,6 +64,7 @@
     "JUnit.MyListTest.testAddAllAtIndex.executor": "Run",
     "JUnit.MyListTest.testContainsAll.executor": "Run",
     "JUnit.MyListTest.testEmptyListIterator.executor": "Run",
+    "JUnit.MyListTest.testGet.executor": "Run",
     "JUnit.MyListTest.testHasNextMethodFromListIterator.executor": "Run",
     "JUnit.MyListTest.testHasNextMethodFromListIteratorWithFullLIst.executor": "Run",
     "JUnit.MyListTest.testIfReturnedArrayHasElementsFromList.executor": "Run",
@@ -114,7 +115,7 @@
       <recent name="unitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyListTest.testAddAllAtIndex">
+  <component name="RunManager" selected="JUnit.MyListTest.testGet">
     <configuration name="MyListTest.testAddAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
@@ -163,6 +164,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyListTest.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyListTest.testRemoveElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
@@ -179,29 +196,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tdd" />
-      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyListTest.testGet" />
         <item itemvalue="JUnit.MyListTest.testAddAllAtIndex" />
         <item itemvalue="JUnit.MyListTest.testAddAll" />
         <item itemvalue="JUnit.MyListTest.testContainsAll" />
         <item itemvalue="JUnit.MyListTest.testRemoveElements" />
-        <item itemvalue="JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +225,7 @@
       <workItem from="1701938327499" duration="72000" />
       <workItem from="1701943897037" duration="3024000" />
       <workItem from="1701951370836" duration="13584000" />
-      <workItem from="1702020467443" duration="11392000" />
+      <workItem from="1702020467443" duration="12229000" />
     </task>
     <task id="LOCAL-00001" summary="Rozwiązania zadań">
       <option name="closed" value="true" />
@@ -274,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702029948462</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="AddAll()">
+      <option name="closed" value="true" />
+      <created>1702032839084</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702032839084</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -141,7 +141,7 @@ public class MyList<E> implements List<E> {
 
         Object[] newArray = c.toArray();
         int newSize = size + newArray.length;
-        if (newSize > elements.length){
+        if (newSize > elements.length) {
             incresecapacity(newSize);
         }
         int numMoved = size - index;
@@ -150,7 +150,7 @@ public class MyList<E> implements List<E> {
 
         System.arraycopy(newArray, 0, elements, index, newArray.length);
         size = newSize;
-        return newArray.length !=0;
+        return newArray.length != 0;
     }
 
     private void incresecapacity(int minCapacity) {
@@ -176,7 +176,10 @@ public class MyList<E> implements List<E> {
 
     @Override
     public E get(int index) {
-        return null;
+        if(index >= size || index < 0) throw new ArrayIndexOutOfBoundsException("Invalid index");
+        @SuppressWarnings("Unchecked")
+        E element = (E) elements[index];
+        return element;
     }
 
     @Override
