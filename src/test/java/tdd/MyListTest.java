@@ -3,7 +3,9 @@ package tdd;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -153,5 +155,30 @@ public class MyListTest {
         String[] resultArray = list.toArray(existingArray);
 
         assertArrayEquals(new String[]{"one", "two", "three"}, resultArray);
+    }
+
+    @Test
+    void testRemoveElements(){
+        MyList<String> list = new MyList<>();
+        list.add("one");
+        list.add("two");
+        list.add("three");
+
+        assertTrue(list.remove("two"));
+        assertEquals(2, list.size());
+        assertFalse(list.contains("two"));
+    }
+
+    @Test
+    void testContainsAll(){
+        myList.add(1);
+        myList.add(2);
+        myList.add(3);
+
+        List<Integer> testCollection = new ArrayList<>();
+        testCollection.add(2);
+        testCollection.add(3);
+
+        assertTrue(myList.contains(testCollection));
     }
 }

@@ -60,6 +60,7 @@
     "JUnit.MyListTest.doesListContainObject.executor": "Run",
     "JUnit.MyListTest.isListEmpty.executor": "Run",
     "JUnit.MyListTest.isListNotEmpty.executor": "Run",
+    "JUnit.MyListTest.testContainsAll.executor": "Run",
     "JUnit.MyListTest.testEmptyListIterator.executor": "Run",
     "JUnit.MyListTest.testHasNextMethodFromListIterator.executor": "Run",
     "JUnit.MyListTest.testHasNextMethodFromListIteratorWithFullLIst.executor": "Run",
@@ -67,8 +68,9 @@
     "JUnit.MyListTest.testIfToArrayReturnsCorrectLength.executor": "Run",
     "JUnit.MyListTest.testNextMethodFromListIterator.executor": "Run",
     "JUnit.MyListTest.testNextMethodFromListIteratorWithFullLIst.executor": "Run",
+    "JUnit.MyListTest.testRemoveElements.executor": "Run",
     "JUnit.MyListTest.testToArrayWithArrayArguments.executor": "Run",
-    "JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements.executor": "Run",
+    "JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements.executor": "Coverage",
     "JUnit.MyListTest.testToArrayWithStringList.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -110,7 +112,23 @@
       <recent name="unitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements">
+  <component name="RunManager" selected="JUnit.MyListTest.testContainsAll">
+    <configuration name="MyListTest.testContainsAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
+      <option name="METHOD_NAME" value="testContainsAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyListTest.testIfReturnedArrayHasElementsFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
@@ -127,7 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest.testIfToArrayReturnsCorrectLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyListTest.testRemoveElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -137,7 +155,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tdd" />
       <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="testIfToArrayReturnsCorrectLength" />
+      <option name="METHOD_NAME" value="testRemoveElements" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,29 +193,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest.testToArrayWithStringList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tdd" />
-      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="testToArrayWithStringList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyListTest.testContainsAll" />
+        <item itemvalue="JUnit.MyListTest.testRemoveElements" />
         <item itemvalue="JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements" />
         <item itemvalue="JUnit.MyListTest.testToArrayWithArrayArguments" />
         <item itemvalue="JUnit.MyListTest.testIfReturnedArrayHasElementsFromList" />
-        <item itemvalue="JUnit.MyListTest.testIfToArrayReturnsCorrectLength" />
-        <item itemvalue="JUnit.MyListTest.testToArrayWithStringList" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +222,7 @@
       <workItem from="1701938327499" duration="72000" />
       <workItem from="1701943897037" duration="3024000" />
       <workItem from="1701951370836" duration="13584000" />
-      <workItem from="1702020467443" duration="4982000" />
+      <workItem from="1702020467443" duration="7593000" />
     </task>
     <task id="LOCAL-00001" summary="Rozwiązania zadań">
       <option name="closed" value="true" />
@@ -246,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701964970441</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="TDD">
+      <option name="closed" value="true" />
+      <created>1702026262357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702026262357</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,5 +288,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/generali_java_testing$MyListTest_testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements.ic" NAME="MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements Coverage Results" MODIFIED="1702026436575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tdd.*</FILTER>
+    </SUITE>
   </component>
 </project>

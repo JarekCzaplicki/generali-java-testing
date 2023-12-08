@@ -88,7 +88,32 @@ public class MyList<E> implements List<E> {
 
     @Override
     public boolean remove(Object o) {
+        if (o == null) {
+            for (int i = 0; i < size; i++) {
+                if (elements[i] == null) {
+                    removeElementAtIndex(i);
+                    return true;
+                }
+            }
+        } else {
+            for (int i = 0; i < size; i++) {
+                if (o.equals(elements[i])) {
+                    removeElementAtIndex(i);
+                    return true;
+                }
+            }
+        }
         return false;
+    }
+
+    private void removeElementAtIndex(int index) {
+        if (index >= size || index < 0) throw new IndexOutOfBoundsException("Invalid index");
+
+        int numMoved = size - index - 1;
+        if (numMoved > 0) {
+            System.arraycopy(elements, index + 1, elements, index, numMoved);
+        }
+        elements[--size] = null;
     }
 
     @Override
