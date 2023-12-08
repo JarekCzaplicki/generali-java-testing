@@ -118,12 +118,21 @@ public class MyList<E> implements List<E> {
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        return false;
+        for (Object element : c) {
+            if (!contains(element)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
     public boolean addAll(Collection<? extends E> c) {
-        return false;
+        boolean modified = false;
+        for (E element : c) {
+            if (add(element)) modified = true;
+        }
+        return modified;
     }
 
     @Override

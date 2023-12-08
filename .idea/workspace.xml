@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1199c3d0-8915-43cc-b140-7e364c494291" name="Changes" comment="TDD">
+    <list default="true" id="1199c3d0-8915-43cc-b140-7e364c494291" name="Changes" comment="Zadanko z weryfikacją czy lista zawiera inną listę">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tdd/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/MyList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tdd/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/MyListTest.java" afterDir="false" />
@@ -60,6 +60,7 @@
     "JUnit.MyListTest.doesListContainObject.executor": "Run",
     "JUnit.MyListTest.isListEmpty.executor": "Run",
     "JUnit.MyListTest.isListNotEmpty.executor": "Run",
+    "JUnit.MyListTest.testAddAll.executor": "Run",
     "JUnit.MyListTest.testContainsAll.executor": "Run",
     "JUnit.MyListTest.testEmptyListIterator.executor": "Run",
     "JUnit.MyListTest.testHasNextMethodFromListIterator.executor": "Run",
@@ -112,7 +113,23 @@
       <recent name="unitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyListTest.testContainsAll">
+  <component name="RunManager" selected="JUnit.MyListTest.testAddAll">
+    <configuration name="MyListTest.testAddAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
+      <option name="METHOD_NAME" value="testAddAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyListTest.testContainsAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
@@ -124,22 +141,6 @@
       <option name="PACKAGE_NAME" value="tdd" />
       <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
       <option name="METHOD_NAME" value="testContainsAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyListTest.testIfReturnedArrayHasElementsFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tdd" />
-      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="testIfReturnedArrayHasElementsFromList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -195,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyListTest.testAddAll" />
         <item itemvalue="JUnit.MyListTest.testContainsAll" />
         <item itemvalue="JUnit.MyListTest.testRemoveElements" />
         <item itemvalue="JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements" />
         <item itemvalue="JUnit.MyListTest.testToArrayWithArrayArguments" />
-        <item itemvalue="JUnit.MyListTest.testIfReturnedArrayHasElementsFromList" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +223,7 @@
       <workItem from="1701938327499" duration="72000" />
       <workItem from="1701943897037" duration="3024000" />
       <workItem from="1701951370836" duration="13584000" />
-      <workItem from="1702020467443" duration="7593000" />
+      <workItem from="1702020467443" duration="8808000" />
     </task>
     <task id="LOCAL-00001" summary="Rozwiązania zadań">
       <option name="closed" value="true" />
@@ -256,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702026262357</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Zadanko z weryfikacją czy lista zawiera inną listę">
+      <option name="closed" value="true" />
+      <created>1702028333157</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702028333157</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +285,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rozwiązania zadań" />
     <MESSAGE value="TDD" />
-    <option name="LAST_COMMIT_MESSAGE" value="TDD" />
+    <MESSAGE value="Zadanko z weryfikacją czy lista zawiera inną listę" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanko z weryfikacją czy lista zawiera inną listę" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

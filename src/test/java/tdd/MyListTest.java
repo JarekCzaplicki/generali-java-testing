@@ -177,8 +177,23 @@ public class MyListTest {
 
         List<Integer> testCollection = new ArrayList<>();
         testCollection.add(2);
-        testCollection.add(3);
+        testCollection.add(2);
 
-        assertTrue(myList.contains(testCollection));
+        assertTrue(myList.containsAll(testCollection));
     }
+
+    @Test
+    void testAddAll() {
+        MyList<String> list = new MyList<>();
+        list.add("one");
+        list.add("two");
+
+        List<String> collectionToAdd = new ArrayList<>();
+        collectionToAdd.add("three");
+        collectionToAdd.add("four");
+
+        assertTrue(list.addAll(collectionToAdd));
+        assertTrue(list.contains("three"));
+        assertTrue(list.contains("four"));
+     }
 }
