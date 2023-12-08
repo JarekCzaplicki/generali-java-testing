@@ -196,4 +196,18 @@ public class MyListTest {
         assertTrue(list.contains("three"));
         assertTrue(list.contains("four"));
      }
+
+    @Test
+    void testAddAllAtIndex() {
+        MyList<String> list = new MyList<>();
+        list.add("one");
+        list.add("two");
+
+        List<String> collectionToAdd = new ArrayList<>();
+        collectionToAdd.add("three");
+        collectionToAdd.add("four");
+
+        assertTrue(list.addAll(1, collectionToAdd));
+        assertEquals("one", );
+    }
 }

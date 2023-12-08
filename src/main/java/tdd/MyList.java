@@ -130,14 +130,33 @@ public class MyList<E> implements List<E> {
     public boolean addAll(Collection<? extends E> c) {
         boolean modified = false;
         for (E element : c) {
-            if (add(element)) modified = true;
+            modified = add(element);
         }
         return modified;
     }
 
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        return false;
+        if (index >= size || index < 0) throw new IndexOutOfBoundsException("Invalid index");
+
+        Object[] newArray = c.toArray();
+        int newSize = size + newArray.length;
+        if (newSize > elements.length){
+            incresecapacity(newSize);
+        }
+        int numMoved = size - index;
+        if (numMoved > 0)
+            System.arraycopy(elements, index, elements, index + newArray.length, numMoved);
+
+        System.arraycopy(newArray, 0, elements, index, newArray.length);
+        size = newSize;
+        return newArray.length !=0;
+    }
+
+    private void incresecapacity(int minCapacity) {
+        int newCapacity = elements.length + (elements.length >> 1);
+        if (newCapacity < minCapacity) newCapacity = minCapacity;
+        elements = Arrays.copyOf(elements, newCapacity);
     }
 
     @Override
