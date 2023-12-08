@@ -7,6 +7,7 @@ public class MyList<E> implements List<E> {
     private Object[] elements;
     private static final int DEFAULT_CAPACITY = 10;
     private int size;
+
     public MyList() {
         this.elements = new Object[DEFAULT_CAPACITY];
         this.size = 0;
@@ -25,7 +26,7 @@ public class MyList<E> implements List<E> {
     @Override
     public boolean contains(Object o) {
         for (int i = 0; i < size; i++) {
-            if(Objects.equals(o, elements[i]))
+            if (Objects.equals(o, elements[i]))
                 return true;
         }
         return false;
@@ -33,17 +34,42 @@ public class MyList<E> implements List<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new Iterator<E>() {
+            private int currentIndex = 0;
+
+            @Override
+            public boolean hasNext() {
+                return currentIndex < size;
+            }
+
+            @Override
+            public E next() {
+                if (!hasNext())
+                    throw new NoSuchElementException();
+                return (E) elements[currentIndex++];
+            }
+        };
     }
 
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        Object[] array = new Object[size];
+        for (int i = 0; i < size; i++) {
+            array[i] = elements[i];
+        }
+        return array;
     }
 
     @Override
     public <T> T[] toArray(T[] a) {
-        return null;
+        if (a.length < size) {
+            return (T[]) Arrays.copyOf(elements, size, a.getClass());
+        }
+        System.arraycopy(elements, 0, a, 0, size);
+        if (a.length > size) { // Do poprawienia jako zadanie
+            a[size] = null;
+        }
+        return a;
     }
 
     @Override
@@ -55,8 +81,8 @@ public class MyList<E> implements List<E> {
     }
 
     private void ensureCapacity() {
-        if(size==elements.length){
-            elements = Arrays.copyOf(elements,elements.length * 2);
+        if (size == elements.length) {
+            elements = Arrays.copyOf(elements, elements.length * 2);
         }
     }
 

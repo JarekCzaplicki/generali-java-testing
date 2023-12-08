@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1199c3d0-8915-43cc-b140-7e364c494291" name="Changes" comment="Rozwiązania zadań">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tdd/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/CarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zadania/InMemoryCarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tdd/MyListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zadania/CarServiceWithMockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zadania/CarServiceWithoutMockTest.java" afterDir="false" />
+    <list default="true" id="1199c3d0-8915-43cc-b140-7e364c494291" name="Changes" comment="TDD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tdd/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/MyListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +57,19 @@
     "JUnit.MyListTest.addElementToList.executor": "Run",
     "JUnit.MyListTest.addElementsToList.executor": "Run",
     "JUnit.MyListTest.canICreateAnMyListObject.executor": "Run",
+    "JUnit.MyListTest.doesListContainObject.executor": "Run",
     "JUnit.MyListTest.isListEmpty.executor": "Run",
     "JUnit.MyListTest.isListNotEmpty.executor": "Run",
+    "JUnit.MyListTest.testEmptyListIterator.executor": "Run",
+    "JUnit.MyListTest.testHasNextMethodFromListIterator.executor": "Run",
+    "JUnit.MyListTest.testHasNextMethodFromListIteratorWithFullLIst.executor": "Run",
+    "JUnit.MyListTest.testIfReturnedArrayHasElementsFromList.executor": "Run",
+    "JUnit.MyListTest.testIfToArrayReturnsCorrectLength.executor": "Run",
+    "JUnit.MyListTest.testNextMethodFromListIterator.executor": "Run",
+    "JUnit.MyListTest.testNextMethodFromListIteratorWithFullLIst.executor": "Run",
+    "JUnit.MyListTest.testToArrayWithArrayArguments.executor": "Run",
+    "JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements.executor": "Run",
+    "JUnit.MyListTest.testToArrayWithStringList.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -105,24 +110,8 @@
       <recent name="unitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyListTest.doesListContainObject">
-    <configuration name="EmailValidatorTest.x (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zadania.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="zadania" />
-      <option name="MAIN_CLASS_NAME" value="zadania.EmailValidatorTest" />
-      <option name="METHOD_NAME" value="x(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyListTest.addElementToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements">
+    <configuration name="MyListTest.testIfReturnedArrayHasElementsFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -132,13 +121,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="tdd" />
       <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="addElementToList" />
+      <option name="METHOD_NAME" value="testIfReturnedArrayHasElementsFromList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest.addElementsToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyListTest.testIfToArrayReturnsCorrectLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -148,13 +137,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="tdd" />
       <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="addElementsToList" />
+      <option name="METHOD_NAME" value="testIfToArrayReturnsCorrectLength" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest.doesListContainObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyListTest.testToArrayWithArrayArguments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -164,13 +153,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="tdd" />
       <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="doesListContainObject" />
+      <option name="METHOD_NAME" value="testToArrayWithArrayArguments" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest.isListEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -180,13 +169,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="tdd" />
       <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="isListEmpty" />
+      <option name="METHOD_NAME" value="testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest.isListNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyListTest.testToArrayWithStringList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -196,7 +185,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tdd" />
       <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="isListNotEmpty" />
+      <option name="METHOD_NAME" value="testToArrayWithStringList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -204,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyListTest.doesListContainObject" />
-        <item itemvalue="JUnit.MyListTest.isListNotEmpty" />
-        <item itemvalue="JUnit.MyListTest.isListEmpty" />
-        <item itemvalue="JUnit.MyListTest.addElementsToList" />
-        <item itemvalue="JUnit.MyListTest.addElementToList" />
+        <item itemvalue="JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements" />
+        <item itemvalue="JUnit.MyListTest.testToArrayWithArrayArguments" />
+        <item itemvalue="JUnit.MyListTest.testIfReturnedArrayHasElementsFromList" />
+        <item itemvalue="JUnit.MyListTest.testIfToArrayReturnsCorrectLength" />
+        <item itemvalue="JUnit.MyListTest.testToArrayWithStringList" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +219,8 @@
       <workItem from="1701348715719" duration="40339000" />
       <workItem from="1701938327499" duration="72000" />
       <workItem from="1701943897037" duration="3024000" />
-      <workItem from="1701951370836" duration="12642000" />
+      <workItem from="1701951370836" duration="13584000" />
+      <workItem from="1702020467443" duration="4982000" />
     </task>
     <task id="LOCAL-00001" summary="Rozwiązania zadań">
       <option name="closed" value="true" />
@@ -240,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701959667039</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TDD">
+      <option name="closed" value="true" />
+      <created>1701964960835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701964960836</updated>
+    </task>
+    <task id="LOCAL-00003" summary="TDD">
+      <option name="closed" value="true" />
+      <created>1701964970441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701964970441</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +265,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rozwiązania zadań" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rozwiązania zadań" />
+    <MESSAGE value="TDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="TDD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
