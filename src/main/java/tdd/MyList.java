@@ -142,7 +142,7 @@ public class MyList<E> implements List<E> {
         Object[] newArray = c.toArray();
         int newSize = size + newArray.length;
         if (newSize > elements.length) {
-            incresecapacity(newSize);
+            increeseCapacity(newSize);
         }
         int numMoved = size - index;
         if (numMoved > 0)
@@ -153,7 +153,7 @@ public class MyList<E> implements List<E> {
         return newArray.length != 0;
     }
 
-    private void incresecapacity(int minCapacity) {
+    private void increeseCapacity(int minCapacity) {
         int newCapacity = elements.length + (elements.length >> 1);
         if (newCapacity < minCapacity) newCapacity = minCapacity;
         elements = Arrays.copyOf(elements, newCapacity);
@@ -161,22 +161,39 @@ public class MyList<E> implements List<E> {
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        return false;
+        boolean modified = false;
+        for (int i = 0; i < size; ) {
+            if (c.contains(elements[i])) {
+                removeElementAtIndex(i);
+                modified = true;
+            } else i++;
+        }
+        return modified;
     }
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        return false;
+        boolean modified = false;
+        for (int i = 0; i < size; ) {
+            if (!c.contains(elements[i])) {
+                removeElementAtIndex(i);
+                modified = true;
+            } else i++;
+        }
+        return modified;
     }
 
     @Override
     public void clear() {
-
+        for (int i = 0; i < size; i++) {
+            elements[i] = null;
+        }
+        size = 0;
     }
 
     @Override
     public E get(int index) {
-        if(index >= size || index < 0) throw new ArrayIndexOutOfBoundsException("Invalid index");
+        if (index >= size || index < 0) throw new ArrayIndexOutOfBoundsException("Invalid index");
         @SuppressWarnings("Unchecked")
         E element = (E) elements[index];
         return element;

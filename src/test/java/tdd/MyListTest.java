@@ -225,4 +225,54 @@ public class MyListTest {
         assertEquals("four", list.get(2));
         assertEquals("two", list.get(3));
     }
+
+    @Test
+    void testRemoveAll(){
+        MyList<String> list = new MyList<>();
+        list.add("one");
+        list.add("two");
+        list.add("three");
+        list.add("four");
+
+        List<String> collectionToRemove = new ArrayList<>();
+        collectionToRemove.add("two");
+        collectionToRemove.add("four");
+        assertTrue(list.removeAll(collectionToRemove));
+        assertEquals(2, list.size());
+        assertFalse(list.contains("two"));
+        assertFalse(list.contains("four"));
+    }
+
+    @Test
+    void testRetainAll(){
+        MyList<String> list = new MyList<>();
+        list.add("one");
+        list.add("two");
+        list.add("three");
+        list.add("four");
+
+        List<String> collectionToRetain = new ArrayList<>();
+        collectionToRetain.add("two");
+        collectionToRetain.add("four");
+        assertTrue(list.retainAll(collectionToRetain));
+        assertEquals(2, list.size());
+        assertTrue(list.contains("two"));
+        assertTrue(list.contains("four"));
+        assertFalse(list.contains("one"));
+        assertFalse(list.contains("three"));
+    }
+
+    @Test
+    void clear() {
+        MyList<String> list = new MyList<>();
+        list.add("one");
+        list.add("two");
+        list.add("three");
+        list.add("four");
+
+        list.clear();
+        assertEquals(0, list.size());
+        assertTrue(list.isEmpty());
+    }
+
 }

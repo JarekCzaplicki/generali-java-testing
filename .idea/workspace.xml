@@ -57,6 +57,7 @@
     "JUnit.MyListTest.addElementToList.executor": "Run",
     "JUnit.MyListTest.addElementsToList.executor": "Run",
     "JUnit.MyListTest.canICreateAnMyListObject.executor": "Run",
+    "JUnit.MyListTest.clear.executor": "Run",
     "JUnit.MyListTest.doesListContainObject.executor": "Run",
     "JUnit.MyListTest.isListEmpty.executor": "Run",
     "JUnit.MyListTest.isListNotEmpty.executor": "Run",
@@ -64,14 +65,16 @@
     "JUnit.MyListTest.testAddAllAtIndex.executor": "Run",
     "JUnit.MyListTest.testContainsAll.executor": "Run",
     "JUnit.MyListTest.testEmptyListIterator.executor": "Run",
-    "JUnit.MyListTest.testGet.executor": "Run",
+    "JUnit.MyListTest.testGet.executor": "Debug",
     "JUnit.MyListTest.testHasNextMethodFromListIterator.executor": "Run",
     "JUnit.MyListTest.testHasNextMethodFromListIteratorWithFullLIst.executor": "Run",
     "JUnit.MyListTest.testIfReturnedArrayHasElementsFromList.executor": "Run",
     "JUnit.MyListTest.testIfToArrayReturnsCorrectLength.executor": "Run",
     "JUnit.MyListTest.testNextMethodFromListIterator.executor": "Run",
     "JUnit.MyListTest.testNextMethodFromListIteratorWithFullLIst.executor": "Run",
+    "JUnit.MyListTest.testRemoveAll.executor": "Run",
     "JUnit.MyListTest.testRemoveElements.executor": "Run",
+    "JUnit.MyListTest.testRetainAll.executor": "Run",
     "JUnit.MyListTest.testToArrayWithArrayArguments.executor": "Run",
     "JUnit.MyListTest.testToArrayWithArrayArgumentsIfReturnedArrayHasSameElements.executor": "Coverage",
     "JUnit.MyListTest.testToArrayWithStringList.executor": "Run",
@@ -115,8 +118,8 @@
       <recent name="unitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyListTest.testGet">
-    <configuration name="MyListTest.testAddAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyListTest.clear">
+    <configuration name="MyListTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +129,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tdd" />
       <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="testAddAll" />
+      <option name="METHOD_NAME" value="clear" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,22 +151,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest.testContainsAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generali-java-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tdd" />
-      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="testContainsAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyListTest.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
@@ -180,7 +167,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest.testRemoveElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyListTest.testRemoveAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generali-java-testing" />
       <extension name="coverage">
         <pattern>
@@ -190,7 +177,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="tdd" />
       <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
-      <option name="METHOD_NAME" value="testRemoveElements" />
+      <option name="METHOD_NAME" value="testRemoveAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListTest.testRetainAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generali-java-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MyListTest" />
+      <option name="METHOD_NAME" value="testRetainAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyListTest.testGet" />
+        <item itemvalue="JUnit.MyListTest.clear" />
+        <item itemvalue="JUnit.MyListTest.testRetainAll" />
+        <item itemvalue="JUnit.MyListTest.testRemoveAll" />
         <item itemvalue="JUnit.MyListTest.testAddAllAtIndex" />
-        <item itemvalue="JUnit.MyListTest.testAddAll" />
-        <item itemvalue="JUnit.MyListTest.testContainsAll" />
-        <item itemvalue="JUnit.MyListTest.testRemoveElements" />
+        <item itemvalue="JUnit.MyListTest.testGet" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +228,7 @@
       <workItem from="1701938327499" duration="72000" />
       <workItem from="1701943897037" duration="3024000" />
       <workItem from="1701951370836" duration="13584000" />
-      <workItem from="1702020467443" duration="12229000" />
+      <workItem from="1702020467443" duration="15082000" />
     </task>
     <task id="LOCAL-00001" summary="Rozwiązania zadań">
       <option name="closed" value="true" />
@@ -283,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702032839084</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="AddAll()">
+      <option name="closed" value="true" />
+      <created>1702033945554</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702033945554</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +325,19 @@
           <url>file://$PROJECT_DIR$/src/test/java/mockito/MockitoExamplesTests.java</url>
           <line>40</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tdd/MyListTest.java</url>
+          <line>206</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tdd/MyList.java</url>
+          <line>195</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
